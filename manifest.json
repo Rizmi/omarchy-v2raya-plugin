@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.rizmi.v2raya-vpn",
+  "name": "v2rayA VPN",
+  "version": "1.0.0",
+  "author": "Rizmi",
+  "license": "MIT",
+  "description": "Connect/disconnect v2rayA VPN and select proxy nodes directly from the Omarchy bar.",
+  "kinds": ["bar-widget"],
+  "entryPoints": { "barWidget": "Panel.qml" },
+  "barWidget": {
+    "displayName": "v2rayA VPN",
+    "description": "Toggle v2rayA VPN and switch server nodes.",
+    "category": "Network",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "serverUrl": "http://127.0.0.1:2017",
+      "username": "",
+      "password": "",
+      "token": "",
+      "refreshIntervalSec": 5
+    },
+    "schema": [
+      {
+        "key": "serverUrl",
+        "type": "string",
+        "label": "v2rayA Server Address",
+        "defaultValue": "http://127.0.0.1:2017"
+      },
+      {
+        "key": "username",
+        "type": "string",
+        "label": "Username",
+        "defaultValue": ""
+      },
+      {
+        "key": "password",
+        "type": "string",
+        "label": "Password",
+        "defaultValue": ""
+      },
+      {
+        "key": "token",
+        "type": "string",
+        "label": "Authorization Token (Optional)",
+        "defaultValue": ""
+      },
+      {
+        "key": "refreshIntervalSec",
+        "type": "integer",
+        "label": "Refresh interval (seconds)",
+        "min": 2,
+        "max": 60,
+        "step": 1,
+        "defaultValue": 5
+      }
+    ]
+  }
+}
