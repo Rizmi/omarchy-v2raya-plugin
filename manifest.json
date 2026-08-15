@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "io.github.rizmi.v2raya-vpn",
+  "id": "omarchy.v2raya-vpn",
   "name": "v2rayA VPN",
   "version": "1.0.0",
-  "author": "Rizmi",
+  "author": "Omarchy Community",
   "license": "MIT",
   "description": "Connect/disconnect v2rayA VPN and select proxy nodes directly from the Omarchy bar.",
   "kinds": ["bar-widget"],
