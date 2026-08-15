@@ -39,13 +39,13 @@ omarchy plugin add https://github.com/Rizmi/omarchy-v2raya-plugin.git --enable
 1. Clone the repository into your Omarchy plugins directory:
    ```bash
    git clone https://github.com/Rizmi/omarchy-v2raya-plugin.git \
-     ~/.config/omarchy/plugins/omarchy.v2raya-vpn
+     ~/.config/omarchy/plugins/io.github.rizmi.v2raya-vpn
    ```
 
 2. Validate and enable the plugin on your status bar:
    ```bash
-   omarchy plugin validate ~/.config/omarchy/plugins/omarchy.v2raya-vpn
-   omarchy plugin enable omarchy.v2raya-vpn --section right
+   omarchy plugin validate ~/.config/omarchy/plugins/io.github.rizmi.v2raya-vpn
+   omarchy plugin enable io.github.rizmi.v2raya-vpn --section right
    ```
 
 ---
@@ -53,8 +53,8 @@ omarchy plugin add https://github.com/Rizmi/omarchy-v2raya-plugin.git --enable
 ## Removal
 
 ```bash
-omarchy plugin disable omarchy.v2raya-vpn
-rm -rf ~/.config/omarchy/plugins/omarchy.v2raya-vpn
+omarchy plugin disable io.github.rizmi.v2raya-vpn
+rm -rf ~/.config/omarchy/plugins/io.github.rizmi.v2raya-vpn
 omarchy-shell shell rescanPlugins
 ```
 
@@ -92,13 +92,13 @@ Configurable from Omarchy's plugin settings UI or `manifest.json`:
 
 ```bash
 # Check status
-omarchy-shell omarchy.v2raya-vpn status
+omarchy-shell io.github.rizmi.v2raya-vpn status
 
 # Refresh status and server nodes
-omarchy-shell omarchy.v2raya-vpn refresh
+omarchy-shell io.github.rizmi.v2raya-vpn refresh
 
 # Toggle VPN on / off
-omarchy-shell omarchy.v2raya-vpn toggle
+omarchy-shell io.github.rizmi.v2raya-vpn toggle
 ```
 
 ---
@@ -106,7 +106,7 @@ omarchy-shell omarchy.v2raya-vpn toggle
 ## File Structure
 
 ```
-~/.config/omarchy/plugins/omarchy.v2raya-vpn/
+~/.config/omarchy/plugins/io.github.rizmi.v2raya-vpn/
 ├── Panel.qml        # QML widget UI, popup panel & IPC handler
 ├── Service.qml      # Background service logic & API client
 ├── Model.js         # Data models and helper functions

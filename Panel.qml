@@ -8,8 +8,8 @@ import "Model.js" as Model
 
 Panel {
   id: root
-  moduleName: "omarchy.v2raya-vpn"
-  ipcTarget: "omarchy.v2raya-vpn"
+  moduleName: "io.github.rizmi.v2raya-vpn"
+  ipcTarget: "io.github.rizmi.v2raya-vpn"
   manageIpc: false
 
   readonly property color foreground: bar ? bar.foreground : Color.foreground
